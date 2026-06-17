@@ -43,15 +43,24 @@
             object-fit: contain;
             margin-bottom: 15px;
         }
-        .btn-volver {
-            display: inline-block;
-            margin-top: 50px;
-            border: 1px solid #58aeff; 
-            padding: 14px 45px; 
-            color: #EBF4FF;
-            text-decoration: none; 
-            letter-spacing: 3px;
-        }
+       .btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+    border: 1px solid #58aeff;
+    padding: 12px 25px;
+    color: #EBF4FF;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.btn-volver:hover {
+    background: #58aeff;
+    color: #111;
+    transform: translateX(-5px);
+}
     </style>
 </head>
 <body>
@@ -104,6 +113,6 @@
             
 
         
-    <a href="index.html" class="btn-volver">VOLVER AL INICIO</a>
+   <a href="index.html" class="btn-volver">←</a>
 </body>
 </html>
