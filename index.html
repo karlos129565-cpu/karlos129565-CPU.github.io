@@ -14,20 +14,20 @@
       text-align: center; padding: 20px;
     }
    .Logotipo {
-  width: 180px;           /* Tamaño de medallón */
-  height: 180px;          /* Cuadrado pa' que el círculo no se deforme */
-  object-fit: cover;      /* Centra el perfume dentro del círculo */
-  border-radius: 50%;     /* Círculo perfecto */
+    width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
   border: 2px solid #58a6ff;
   box-shadow: 0 0 30px rgba(88, 166, 255, 0.6);
   margin-bottom: 30px;
-}
- 
   animation: pulse 4s ease-in-out infinite;
 }
-
-@keyframes pulse {
+}
+ @keyframes pulse {
   0%, 100% { box-shadow: 0 0 30px rgba(88, 166, 255, 0.4), inset 0 0 20px rgba(88, 166, 255, 0.2); }
+  50% { box-shadow: 0 0 50px rgba(88, 166, 255, 0.8), inset 0 0 30px rgba(88, 166, 255, 0.4); }
+}
   50% { box-shadow: 0 0 50px rgba(88, 166, 255, 0.8), inset 0 0 30px rgba(88, 166, 255, 0.4); }
 }
     .tagline {
