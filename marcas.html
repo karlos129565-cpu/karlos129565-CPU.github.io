@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEUR NOIRE - Nuestras Marcas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #000; 
+            color: #EBF4FF; 
+            font-family: 'Montserrat', sans-serif; 
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 { 
+            font-family: 'Cormorant Garamond', serif;
+            color: #58aeff; 
+            font-size: 40px;
+            margin-bottom: 50px;
+            letter-spacing: 4px;
+        }
+        .grid-marcas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .marca {
+            border: 1px solid #58aeff;
+            padding: 20px;
+            transition: 0.4s;
+        }
+        .marca:hover {
+            box-shadow: 0 0 30px rgba(88, 166, 255, 0.6);
+            transform: scale(1.05);
+        }
+        .marca img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .btn-volver {
+            display: inline-block;
+            margin-top: 50px;
+            border: 1px solid #58aeff; 
+            padding: 14px 45px; 
+            color: #EBF4FF;
+            text-decoration: none; 
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NUESTRAS MARCAS</h1>
+    
+    <div class="grid-marcas">
+        <!-- MARCA 1 -->
+        <div class="marca">
+            <img src="URL-DE-TU-IMAGEN-1" alt="Marca 1">
+            <p>MARCA 1</p>
+        </div>
+        
+        <!-- MARCA 2 -->
+        <div class="marca">
+            <img src="URL-DE-TU-IMAGEN-2" alt="Marca 2">
+            <p>MARCA 2</p>
+        </div>
+        
+        <!-- COPIA Y PEGA MÁS MARCAS AQUÍ -->
+    </div>
+
+    <a href="index.html" class="btn-volver">VOLVER AL INICIO</a>
+</body>
+</html>
