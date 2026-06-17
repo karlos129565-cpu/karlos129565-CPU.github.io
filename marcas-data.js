@@ -21,7 +21,7 @@ const infoMarcas = {
 
   "CAROLINA HERRERA": {
   img: "./logo-ch.webp",
-  descrpcion: 'La marca Carolina Herrera se fundó oficialmente en 1980 y se ha expandido a lo largo de las décadas, incluyendo líneas de prêt-à-porter, accesorios, fragancias y maquillaje.  En 1988 lanzó su primer perfume para mujer y hombre, y posteriormente fragancias masculinas como 212 Men. . La marca también introdujo CH Carolina Herrera, una línea más accesible de estilo de vida, y abrió boutiques emblemáticas en Nueva York y Madrid. . Desde 2018, su hija Carolina Herrera de Báez ha asumido el rol de directora creativa, manteniendo la esencia de la marca mientras incorpora nuevas tendencias.' 
+  descripcion: 'La marca Carolina Herrera se fundó oficialmente en 1980 y se ha expandido a lo largo de las décadas, incluyendo líneas de prêt-à-porter, accesorios, fragancias y maquillaje.  En 1988 lanzó su primer perfume para mujer y hombre, y posteriormente fragancias masculinas como 212 Men. . La marca también introdujo CH Carolina Herrera, una línea más accesible de estilo de vida, y abrió boutiques emblemáticas en Nueva York y Madrid. . Desde 2018, su hija Carolina Herrera de Báez ha asumido el rol de directora creativa, manteniendo la esencia de la marca mientras incorpora nuevas tendencias.' 
   }
 
 };
