@@ -1,53 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian`s Threads - Shop Brian</title>
-    <style>
-        body {
-            background: #0d1117; 
-           <div style="text-align: center; margin: 30px 0;">
-    <img src="logo-tienda.jpeg" alt="Brian's Shop Perfumes" style="width: 120px; height: 120px; border-radius: 50%; border: 2px solid #58a6ff; box-shadow: 0 0 25px #58a6ff; object-fit: contain; background: #0d1117; padding: 10px;">
-    <h1 style="color: #58a6ff; text-shadow: 0 0 10px #58a6ff; margin: 15px 0 5px 0; font-size: 32px; letter-spacing: 3px;">BRIAN'S THREADS</h1>
-    <p style="color: #8b949e; margin: 0; font-size: 14px; letter-spacing: 2px;">AROMAS DE ASGARD</p>
-</div>    <h1 style="color: #58a6ff; text-shadow: 0 0 10px #58a6ff; margin: 0; font-size: 32px;">BRIAN'S THREADS</h1>
-</div>
-            font-family: 'Courier New', monospace; 
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(180deg, #1f6feb33, transparent);
-        }
-        .logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #58a6ff;
-            box-shadow: 0 0 25px #58a6ff;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 { color: #58a6ff; font-size: 2.8em; margin: 10px 0; }
-        .glow { text-shadow: 0 0 15px #58a6ff; }
-        h2 { color: #8b949e; font-weight: normal; margin-top: 0; }
-        
-        .productos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .card {
-            background: #161b22;
-            border: 2px solid #30363d;
-            border-radius: 10px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEUR NOIRE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background: #000000;
+      color: #F5F5F0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    
+    .encabezado {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #1A1A1A, transparent);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid #8B7355;
+      box-shadow: 0 0 25px rgba(139, 115, 85, 0.3);
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #F5F5F0;
+      font-size: 3.5rem;
+      font-weight: 300;
+      letter-spacing: 8px;
+      margin: 20px 0;
+    }
+    
+    .tagline {
+      color: #8B7355;
+      letter-spacing: 4px;
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+    
+    .btn {
+      border: 1px solid #F5F5F0;
+      padding: 12px 40px;
+      color: #F5F5F0;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+    
+    .btn:hover {
+      background: #F5F5F0;
+      color: #000;
+    }
+    
+    .drop-section {
+      padding: 100px 20px;
+      text-align: center;
+      background: #0A0A0A;
+    }
+  </style>
+</head>
+<body>
+  <div class="encabezado">
+    <img src="logo-tienda.jpeg" alt="Fleur Noire" class="logo">
+    <h1>FLEUR NOIRE</h1>
+    <p class="tagline">LA ELEGANCIA NACE EN LA SOMBRA</p>
+    <a href="#drop" class="btn">DROP NOIR 01</a>
+  </div>
+  
+  <div id="drop" class="drop-section">
+    <h2 style="font-family: 'Cormorant Garamond', serif; letter-spacing: 5px; margin-bottom: 60px;">DROP NOIR 01</h2>
+    <!-- Aquí van tus productos we -->
+  </div>
+</body>
+</html>: 10px;
             padding: 15px;
             width: 280px;
             text-align: center;
