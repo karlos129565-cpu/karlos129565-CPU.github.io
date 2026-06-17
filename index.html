@@ -46,23 +46,25 @@
       background: #58a6ff; color: #000; 
       box-shadow: 0 0 25px rgba(88, 166, 255, 0.6);
     }
-    .btn-whatsapp {
-     border: 1px solid: #25D366;
-     padding: 14px 45px;
-     color: #25D366;
-     text-decoration: none;
-     letter-spacing: 3px;
-     front-size: 12px;
-     transition: 0.4;
-     box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
-     margin-top: 15px; 
-     display: inline-block; 
-     }
-    .btn-whatsapp:hover {
-     blackground: #25D366; 
-     color: #000;
-     box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
-     } 
+    
+    .whatsapp-logo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    transition: transform 0.3s;
+}
+
+.whatsapp-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.whatsapp-logo:hover {
+    transform: scale(1.1);
+}
 </style>
 </head>
 <body>
@@ -71,7 +73,9 @@
       <p class="tagline">LA ELEGANCIA NACE EN LA SOMBRA</p>
       <a href="marcas.html" class="btn">DESCUBRIR</a>
       <br> 
-      <a href="https://wa.me/5215564448318" class="btn-whatsapp" target="_blank">WHATSAPP</a>
+   <a href="https://wa.me/5215564448318?text=Hola,%20quiero%20info%20de%20FLEUR%20NOIRE" class="whatsapp-logo" target="_blank">
+    <img src="https://i.postimg.cc/Y0yQ3F5p/whatsapp-logo.webp" alt="WhatsApp">
+</a>
   </section>  
 </body>
 </html>
