@@ -271,12 +271,19 @@ window.onclick = (event) => {
 <script>
 function abrirModal(marca) {
     const data = infoMarcas[marca];
+    if(!data) {
+        console.log('No existe:', marca);
+        return;
+    }
     document.getElementById('modal-img').src = data.img;
     document.getElementById('modal-texto').innerText = data.descripcion;
     document.getElementById('modal').style.display = 'block';
 }
+
+function cerrarModal() {
+    document.getElementById('modal').style.display = 'none';
+}
 </script>
 </body>
-</html>      
-</body>
 </html>
+
