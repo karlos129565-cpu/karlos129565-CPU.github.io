@@ -253,15 +253,7 @@ const cerrar = document.querySelector('.cerrar');
 
 tarjetas.forEach(tarjeta => {
   tarjeta.addEventListener('click', () => {
-    const nombreMarca = tarjeta.querySelector('p').textContent.trim();
-    if(infoMarcas[nombreMarca]) {
-      document.getElementById('modalImg').src = infoMarcas[nombreMarca].img;
-      document.getElementById('modalTitulo').textContent = nombreMarca;
-      document.getElementById('modalDescripcion').textContent = infoMarcas[nombreMarca].descripcion;
-      modal.style.display = 'block';
-    }
-  });
-});
+ 
 
 cerrar.onclick = () => modal.style.display = 'none';
 window.onclick = (event) => {
