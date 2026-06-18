@@ -229,46 +229,34 @@
 <img src="https://i.postimg.cc/y6T3LQSn/logo-yv.webp" alt="Yves Saint Laurent">
 <p> YVES SAINT LAURENT</p>
  </div>
-            
 
-        
-   <a href="index.html" class="btn-volver"><span class="flecha">←</span></a>
-    
-
-<!-- MODAL PARA LA INFO -->
-<div id="modalMarca" class="modal">
-  <div class="modal-contenido">
-    <span class="cerrar">&times;</span>
-    <img id="modalImg" src="" alt="">
-    <h2 id="modalTitulo"></h2>
-    <p id="modalDescripcion"></p>
+<div id="modal" style="display:none; position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7);">
+  <div style="background-color:#fefefe; margin:15% auto; padding:20px; border:1px solid #888; width:80%; max-width:400px; border-radius:10px;">
+    <span onclick="cerrarModal()" style="color:#aaa; float:right; font-size:28px; font-weight:bold; cursor:pointer;">&times;</span>
+    <img id="modal-img" src="" style="width:80px; margin:0 auto; display:block;">
+    <h3 id="modal-titulo" style="text-align:center;"></h3>
+    <p id="modal-texto"></p>
   </div>
 </div>
 
 <script src="marcas-data.js"></script>
 <script>
-const tarjetas = document.querySelectorAll('.marca');
-const modal = document.getElementById('modalMarca');
-const cerrar = document.querySelector('.cerrar');
-
-tarjetas.forEach(tarjeta => {
-  tarjeta.addEventListener('click', () => {
- 
-
-cerrar.onclick = () => modal.style.display = 'none';
-window.onclick = (event) => {
-  if (event.target == modal) modal.style.display = 'none';
-}
-<script src="marcas-data.js"></script>
-<script>
-function abrirModal(marca) {
-    const data = infoMarcas[marca];
-    if(!data) {
-        console.log('No existe:', marca);
+function abrirModal(nombre) {
+    if(typeof infoMarcas === 'undefined'){
+        alert('Error: No cargó marcas-data.js');
         return;
     }
-    document.getElementById('modal-img').src = data.img;
-    document.getElementById('modal-texto').innerText = data.descripcion;
+    
+    const info = infoMarcas[nombre];
+    if(!info){
+        alert('No encontré: ' + nombre);
+        console.log('Disponibles:', Object.keys(infoMarcas));
+        return;
+    }
+    
+    document.getElementById('modal-img').src = info.img;
+    document.getElementById('modal-titulo').innerText = nombre;
+    document.getElementById('modal-texto').innerText = info.descripcion;
     document.getElementById('modal').style.display = 'block';
 }
 
@@ -277,5 +265,13 @@ function cerrarModal() {
 }
 </script>
 </body>
+</html>         
+
+        
+   <a href="index.html" class="btn-volver"><span class="flecha">←</span></a>
+    
+
+<!-- MODAL PARA LA INFO -->
+
 </html>
 
