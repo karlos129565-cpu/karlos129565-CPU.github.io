@@ -165,9 +165,9 @@
         <p> CAROLINA HERRERA</p>
     </div>
         
-<div class="marca">
+<div class="marca" onclick="abrirModal('CHANEL')">
     <img src="https://i.postimg.cc/mkVchksg/logo-coco.webp" alt="Chanel">
-    <p> COCO CHANEL</p>
+    <p> CHANEL</p>
 </div>
 
 <div class="marca">
@@ -266,6 +266,14 @@ tarjetas.forEach(tarjeta => {
 cerrar.onclick = () => modal.style.display = 'none';
 window.onclick = (event) => {
   if (event.target == modal) modal.style.display = 'none';
+}
+<script src="marcas-data.js"></script>
+<script>
+function abrirModal(marca) {
+    const data = infoMarcas[marca];
+    document.getElementById('modal-img').src = data.img;
+    document.getElementById('modal-texto').innerText = data.descripcion;
+    document.getElementById('modal').style.display = 'block';
 }
 </script>
 </body>
